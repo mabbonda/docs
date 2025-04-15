@@ -58,6 +58,7 @@ To allocate DHCP addresses from the configured pool, you must configure an inter
 
 ```
 cumulus@switch:~$ nv set interface vlan10 ip address 10.1.10.1/24
+cumulus@switch:~$ nv set service dhcp-server default interface vlan10
 cumulus@switch:~$ nv config apply
 ```
 
@@ -84,6 +85,7 @@ To allocate DHCP addresses from the configured pool, you must configure an inter
 
 ```
 cumulus@switch:~$ nv set interface vlan10 ip address 2001:db8::10/64
+cumulus@switch:~$ nv set service dhcp-server default interface vlan10
 cumulus@switch:~$ nv config apply
 ```
 
